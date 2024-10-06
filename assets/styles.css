@@ -1,0 +1,207 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ffffff0e;
+    font-size: 19px;
+}
+
+.number {
+    margin-left: 600px;
+}
+
+.class {
+    margin-right: 600px;
+}
+
+.functions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ffffff21;
+    font-size: 19px;
+    margin-left: 1200px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu, .biodata, .gallery, .reg {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+        color: #00FF00;
+        transition: color 0.5s ease;
+    }
+}
+
+.menu {
+    margin-left: 23px;
+}
+
+.reg {
+    margin-right: 23px;
+}
+
+.names {
+    margin-top: 10px;
+    display: flex;
+}
+
+.vertical-down-name {
+    transform: rotate(90deg);
+    margin-right: 50px;
+    letter-spacing: 5px;
+}
+
+.name {
+    padding-left: 90px;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.last-name {
+    margin-top: -80px;
+}
+
+.vertical-up-name {
+    transform: rotate(-90deg);
+    letter-spacing: 5px;
+}
+
+.image1 {
+    width: auto;
+    height: auto;
+    max-width: 340px;
+    max-height: 340px;
+}
+
+.image2 {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.job {
+    font-weight: bold;
+    font-size: 60px;
+    padding-left: 50px;
+    position: relative;
+    transform: translateX(-100%);
+    animation: slideIn 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.job.slide-in-done {
+    animation: none;
+}
+
+.anim {
+    display: flex;
+}
+
+.animator {
+    color: #00a2ff;
+}
+
+.anims {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #00a2ff;
+    padding-left: 20px;
+}
+
+.and {
+    margin-left: 350px;
+    margin-top: -55px;
+}
+
+.mods {
+    display: flex;
+}
+
+.model {
+    margin-left: 400px;
+    margin-top: -55px;
+    color: #15ff00;
+}
+
+.models {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #15ff00;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    margin-top: -55px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #ffffff25;
+}
+
+/* BIODATA */
+
+.about, .isi-about {
+    padding-left: 100px;
+    margin-right: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.isi-about {
+    text-align: justify;
+    font-size:   24px;
+}
+
+.an {
+    margin-left: 80px;
+    opacity: 0;
+    display: flex;
+    transition: opacity 0.5s;
+}
+
+.tb2, .tb3 {
+    margin-left: 50px;
+}
+
+.before img, .neko img, .power img, .gun img {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.neko img {
+    width: 400px;
+}
