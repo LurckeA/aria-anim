@@ -7,17 +7,33 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/styles.css">
     <style>
+        body {
+            font-size: 16px;
+        }
+        .names-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .image1, .image2 {
+            max-width: 100%;
+            height: auto;
+        }
+        .job {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         @media screen and (max-width: 768px) {
-            /* Add responsive styles here */
+            body {
+                font-size: 14px;
+            }
             .names-images {
                 flex-direction: column;
             }
-            .image1, .image2 {
-                max-width: 100%;
-                height: auto;
-            }
             .job {
                 flex-direction: column;
+                align-items: center;
             }
         }
     </style>
