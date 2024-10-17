@@ -2,10 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Aria X.4</title>
 
-    <link rel="stylesheet" type="text/css" href="/aria-anim/assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            /* Add responsive styles here */
+            .names-images {
+                flex-direction: column;
+            }
+            .image1, .image2 {
+                max-width: 100%;
+                height: auto;
+            }
+            .job {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="top-info">
@@ -53,10 +68,10 @@
                 </div>
             </td>
             <td>
-                <img src="/aria-anim/images/sword.png" class="image1">
+                <img src="/images/sword.png" class="image1">
             </td>
             <td>
-                <img src="/aria-anim/images/he-ded-fr.png" class="image2">
+                <img src="/images/he-ded-fr.png" class="image2">
             </td>
         </tr>
     </table>
