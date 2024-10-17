@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="/aria-anim/assets/index-styles.css">
+    <link rel="stylesheet" href="/assets/index-styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.min.js"></script>
-    <script src="/aria-anim/assets/scripts.js"></script>
+    <script src="/assets/scripts.js"></script>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
